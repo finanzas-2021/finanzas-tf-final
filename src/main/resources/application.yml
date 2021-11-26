@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/WheelManager
+    username: postgres
+    password: Rushia
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+# DataSource Configuration & Properties PostgreSQL
+#spring.datasource.url=postgres://obbkzroaahcnhb:35a241b63eb5cabe96ca141445863243089d874fe491db48e6adb9dba0c71895@ec2-18-214-140-149.compute-1.amazonaws.com:5432/dd3f4633uvrdk8
+#spring.datasource.username=
+
+# Hibernate Configuration PostgreSQL
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+# DDL auto Configuration
+#spring.jpa.hibernate.ddl-auto=update
+
+# Logging and Tracing
+#logging.level.org.hibernate.SQL=DEBUG
+#logging.level.org.hibernate.type=TRACE
+
+# Swagger
+#springdoc.api-docs.path=/wheel_manager-api-docs
+#springdoc.swagger-ui.path=/wheel_manager-api-docs-ui.html
